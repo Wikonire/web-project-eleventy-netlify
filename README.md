@@ -6,6 +6,8 @@ The project uses **Eleventy (11ty)** as the SSG and **Clouddflare** as the hosti
 
 Accessibility (a11y), semantic HTML and sustainable design were key priorities. The final site is mobile-friendly, screen-reader compatible and tested on various screen sizes.
 
+You can view the live website here: [https://web-project-eleventy.pages.dev/](https://web-project-eleventy.pages.dev/)
+
 ---
 
 ## Ecograder Result
@@ -48,10 +50,10 @@ You can validate the site using the following tools:
     - Supports templates and layouts via Nunjucks
     - Lightweight and accessibility-friendly
 
-- **Hosting & CI/CD:** [Netlify](https://www.netlify.com/)
-    - Automatic builds from GitHub
-    - Fast, free, and supports custom domains
-    - Great for static sites and Markdown-based content
+- **Hosting & CI/CD:** [Cloudflare Pages](https://pages.cloudflare.com/)
+    - Automatic builds and deployments from GitHub
+    - Free, fast, and includes a global CDN for optimal performance
+    - Supports custom domains with HTTPS
 
 ---
 
@@ -73,21 +75,42 @@ Classes give you control. Selectors often or potentially catch too much or the w
 - **[BEM (Block Element Modifier)](https://getbem.com/)** relies consistently on classes to structure and organize styles.
 - **[Atomic CSS and utility-first approaches like Tailwind](https://tailwindcss.com/docs/utility-first)** are entirely based on classes.
 
+---
 
+## Design Decisions
 
+### Static Site Generator
+
+We selected **Eleventy (11ty)** because:
+- It offers great flexibility by supporting multiple templating languages.
+- It is easy to configure and does not require complex build tools.
+- It provides excellent performance and enables sustainable, energy-efficient websites.
+- It renders Markdown directly into semantic HTML.
+
+> See details in [StaticSiteGenerator.md](./StaticSiteGenerator.md)
+
+---
+
+### Deployment and Hosting
+
+We chose **Cloudflare Pages** for deployment because:
+- It integrates easily with GitHub.
+- It provides automated builds and deployments (CI/CD).
+- It serves content via a global CDN for optimal performance.
+- It qualifies as a green hosting provider with an Ecograder score above 90.
+
+> See details in [Deployment.md](./Deployment.md)
 
 ---
 
 ## Sources and Tools
 
-- Eleventy Documentation: https://www.11ty.dev/docs/
-- Netlify Docs: https://docs.netlify.com/
 - HTML Validator: https://validator.w3.org/
 - CSS Validator: https://jigsaw.w3.org/css-validator/
 - Ecograder: https://ecograder.com/
 - Nunjucks Docs: https://mozilla.github.io/nunjucks/getting-started.html
 
-> This project was partly supported by [ChatGPT](https://openai.com/chatgpt) for technical structuring and code generation for inspiration. All source code and final documentation were reviewed and verified by the authors.
+> This project was partly supported by [ChatGPT](https://openai.com/chatgpt) for technical structuring, code generation for inspiration, and assistance with translation into English. All source code and final documentation were reviewed and verified by the authors.
 
 ---
 
